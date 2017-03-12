@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace HsaDotnetBackend.Models.DTOs
+namespace HsaServiceDtos
 {
     public sealed class StoreWithProductsDto
     {
@@ -10,7 +10,6 @@ namespace HsaDotnetBackend.Models.DTOs
         }
         public int StoreId { get; set; }
         public string Name { get; set; }
-        public System.Data.Entity.Spatial.DbGeography Location { get; set; }
         public IEnumerable<ProductDto> Products { get; set; }
     }
 }
